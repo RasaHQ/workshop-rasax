@@ -1,0 +1,54 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - feedback
+  - name
+  - location
+
+actions:
+- utter_greet
+- utter_send_blog
+- utter_docs
+- utter_goodbye
+- utter_ask_feedback
+- utter_ask_name
+- utter_ask_location
+- utter_thanks
+
+entities:
+  - name
+  - location
+
+slots:
+  name:
+    type: "unfeaturized"
+  location:
+    type: "unfeaturized"
+
+templates:
+  utter_greet:
+  - text: "Hey! Have you used Rasa open source framework before?"
+
+  utter_docs:
+  - text: "Then you should go check out the Rasa documentation first at https://rasa.com/docs"
+
+
+  utter_send_blog:
+  - text: "Great, {name}! Since we have released the Rasa 1.0 and Rasa X you should check out our latest tutorial on how to migrate. Check out https://blog.rasa.com"
+
+  utter_ask_name:
+  - text: "Great, I am Sara. What is your name?"
+
+  utter_ask_location:
+  - text: "And where are you from?"
+
+  utter_ask_feedback:
+  - text: "Please also share your feedback on Rasa with me."
+
+  utter_thanks:
+  - text: "Thank you so much!"
+
+  utter_goodbye:
+  - text: "Bye!"
