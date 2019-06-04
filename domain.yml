@@ -3,6 +3,7 @@ intents:
   - goodbye
   - affirm
   - deny
+  - thanks
   - feedback
   - location
 
