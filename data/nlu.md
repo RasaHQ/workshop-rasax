@@ -46,13 +46,8 @@
 - I am from the [United States](location)
 - I am from Berlin
 
-## intent:name
-- My name is [Juste](name)
-- It's [David](name)
-- I am [Sara](name)
-- people call me [Liz](name)
-- you can call me [Alex](name)
-- My name is [Sam](name)
-
 ## intent:thanks
 - Thanks
+- thank you
+- thank you so much
+- many thanks

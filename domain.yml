@@ -4,7 +4,6 @@ intents:
   - affirm
   - deny
   - feedback
-  - name
   - location
 
 actions:
@@ -18,12 +17,9 @@ actions:
 - utter_thanks
 
 entities:
-  - name
   - location
 
 slots:
-  name:
-    type: "unfeaturized"
   location:
     type: "unfeaturized"
 
