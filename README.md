@@ -27,7 +27,15 @@ To improve the assistant with Rasa X and real conversational data, run:
 ## Exercise
 You can find a detailed walkthrough of the exercise inside the `exercise.md` file of this repository.
 
+## Learn more
+Learn more about Rasa, Rasa X and Rasa community:
+- [Rasa website](https://rasa.com)
+- [Rasa documentation](https://rasa.com/docs)
+- [Rasa blog](https://blog.rasa.com)
+- [Rasa community forum](https://forum.rasa.com)
+
 
 ## Get in touch
 If you have questions about this repository or Rasa software in general, send questions to Justina at juste@rasa.com
+
 
