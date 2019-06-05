@@ -9,4 +9,3 @@ policies:
   - name: MemoizationPolicy
   - name: KerasPolicy
     epochs: 200
-  - name: MappingPolicy
