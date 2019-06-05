@@ -1,4 +1,4 @@
-## AI assistant with Rasa and Rasa X
+# AI assistant with Rasa and Rasa X
 
 This repository contains the files needed to create a simple AI assistant with open source Rasa tools.
 
