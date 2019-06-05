@@ -32,6 +32,3 @@
 * goodbye
   - utter_goodbye
 
-## say goodbye
-* goodbye
-  - utter_goodbye
