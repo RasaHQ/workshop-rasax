@@ -4,7 +4,7 @@ This repository contains the files needed to create a simple AI assistant with o
 
 ## Requirements
 
-You should be able to follow this exercise on any OS with Python 3 installed. If you encounter any
+You should be able to follow this exercise on any OS with **Python 3** installed. If you encounter any
 issues when setting up your environments, send an email to juste@rasa.com or raise an issue on this
 repository.
 
