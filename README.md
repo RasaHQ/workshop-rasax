@@ -15,6 +15,9 @@ To do that, run:
 
 `pip install rasa-x --extra-index-url https://pypi.rasa.com/simple`
 
+In one of the steps of this exercise we will use ngrok. This is an optional step, but if you want to follow,
+make sure to [download ngrok](https://ngrok.com/download) as well. 
+
 ## Quick run
 To run the assistant on you command line using Rasa, run:
 
