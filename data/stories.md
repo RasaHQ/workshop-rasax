@@ -32,3 +32,17 @@
 * goodbye
   - utter_goodbye
 
+## existing rasa user 3
+* greet
+  - utter_greet
+* affirm
+  - utter_ask_name
+* name{"name":"Alice"}
+  - utter_ask_location
+* location{"location":"London"}
+  - utter_send_blog
+  - utter_ask_feedback
+* feedback
+  - utter_thanks
+* goodbye
+  - utter_goodbye
