@@ -130,7 +130,11 @@ Train the dialogue model by running:
 
 `rasa train core`
 
-Once the model is trained you can talk to your bot by running:
+Start the server for Rasa custom actions:
+
+`rasa run actions`
+
+Once the server is up and runniing you can talk to your bot by running:
 
 `rasa shell`
 
