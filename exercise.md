@@ -8,7 +8,7 @@ To train a NLU model with Rasa, you will need two things - training data and mod
 
 ---
 
-#### Create NLU training data
+#### 1.1 Create NLU training data
 
 You can find some training data inside the `./data/nlu.md` file. NLU training data follows the format:
 
@@ -28,14 +28,14 @@ Add a new intent `name` with a few training examples (don't forget to annotate e
  ``` 
 ---
 
-#### Create NLU model configuration pipeline
+#### 1.2 Create NLU model configuration pipeline
 
 `config.yml` file contains a sample configuration of the model pipeline. You can modify the pipeline if you
 like by adding new [pipeline components](http://rasa.com/docs/rasa/nlu/choosing-a-pipeline/). 
 
 ---
 
-#### Train the NLU model
+#### 1.3 Train the NLU model
 Once you update the training data and model configuration, train the NLU model by running:
 
 `rasa train nlu`
@@ -46,7 +46,7 @@ Once mode is trained, it will be saved in a `./models` directory of you project.
 
 ---
 
-#### Add synonyms
+#### 1.4 Add synonyms
 Synonyms can help you normalize the extracted entity values. It's very useful if
 you want to use entities to query the database or make an API call. Update the 
 intent `location` by adding synonyms to some location names where applicable. For 
@@ -61,7 +61,7 @@ example:
 
 ---
 
-#### Add multi-intents
+#### 1.5 Add multi-intents
 Another advanced use case which you should train your assistant to handle is dealing
 with multi-intents - user inputs which represent more than one intention. To train 
 your bot to understand such inputs, create a new multi-intent for affirmation and subscribing to the newsletter and provide some corresponding training examples. For example:
@@ -79,24 +79,24 @@ Dialogue management system is responsible of predicting how an assistant should 
 
 ---
 
-#### Create training stories
+#### 2.1 Create training stories
 The file `./data/stories.md` already contains some training stories. Add a new example story to cover
 new dialogue turn.
 
 ---
 
-#### Update the domain
+#### 2.2 Update the domain
 A file called `domain.yml` contains the domain configuration of your assistant. It contains all the information an assistant needs to know to operate. Update the domain with your previously created `intents` and `entities` as well as `slots`. Update the domain to include all newly created intents (`name`, `affirm+subscribe`), slots and if you like, you can add more possible response templates.
 
 ---
 
-#### Create model configuration
+#### 2.3 Create model configuration
 A file `config.yml` also contains the configuration of the dialogue model. You can test the performance
 of [different policies](http://rasa.com/docs/rasa/core/policies/) too. 
 
 ---
 
-#### Implement a custom action
+#### 2.4 Implement a custom action
 The responses of your assistant can go beyond simple text templates. The responses where an assistant actually takes an action (makes an API call, extracts some data from the database, etc) are called custom actions and have to implemented as a custom action class inside the file called `actions.py`. Finish implementing the custom action so that the assistant responds with a message and sends a link to a picture:
 
 ```
@@ -125,7 +125,7 @@ class ActionSubscribe(Action):
 
 ---
 
-#### Train the dialogue model
+#### 2.5 Train the dialogue model
 Train the dialogue model by running:
 
 `rasa train core`
@@ -140,12 +140,12 @@ Rasa also comes with handy functions which allow to visualize training stories. 
 
 ---
 
-#### Add stories with multi-intents
+#### 2.6 Add stories with multi-intents
 Using the provided stories, your assistant can handle some simple conversations. Update your stories data with examples including multi-intents and test how it affects the performance of your assistant.
 
 ---
 
-#### Add a fallback policy
+#### 2.7 Add a fallback policy
 It's likely that at some point your assistant will make a mistake - the NLU or dialogue model might get uncertain about some predictions once it gets some unexpected user inputs. Once way to go around this problem is using a FallbackPolicy which invokes a fallback action if the intent recognition has a confidence below `nlu_threshold`. Update your model configuration in `config.yml` to include the fallback policy:
 
 ```
@@ -163,7 +163,7 @@ actual users, collect the feedback from them and improve your assistant continuo
 
 ---
 
-#### Use Rasa X to improve your assistant
+#### 3.1 Use Rasa X to improve your assistant
 The best way to improve your assistant using real conversational data is using Rasa X. In this repository,
 you will find files called `rasa.db` and `tracked.db` which already contain a few real-world conversations
 between our bot and the users. We will reuse them to improve the assistant using the Rasa X. Start your 
@@ -182,7 +182,7 @@ generate with your assistant will end up in `Conversations` tab for you to look 
 
 ---
 
-#### Expose your assistant to the outside world 
+#### 3.2 Expose your assistant to the outside world 
 To share your assistant with friends, you will have to expose your locally running assistant to the outside world.
 To do that, you can deploy your assistant on a server, or use ngrok (recommended for non-production environments only).
 To do that, start ngrok by running:
