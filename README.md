@@ -28,7 +28,7 @@ To improve the assistant with Rasa X and real conversational data, run:
 `rasa x`
 
 ## Exercise
-You can find a detailed walkthrough of the exercise inside the `exercise.md` file of this repository.
+You can find a detailed walkthrough of the exercise inside the `exercise.md` file of this repository. You can also find a completed exercise inside the `completed_exercise` directory of this repo.
 
 ## Learn more
 Learn more about Rasa, Rasa X and Rasa community:
