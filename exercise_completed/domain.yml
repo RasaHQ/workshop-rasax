@@ -5,8 +5,9 @@ intents:
   - deny
   - thanks
   - location
+  - name
   - subscribe
-
+  - affirm+subscribe
 
 actions:
 - utter_greet
@@ -16,7 +17,7 @@ actions:
 - utter_ask_location
 - utter_goodbye
 - utter_used_rasa
-
+- action_subscribe
 
 entities:
   - location
@@ -24,7 +25,8 @@ entities:
 slots:
   location:
     type: "unfeaturized"
-
+  name:
+    type: "unfeaturized"
 
 templates:
   utter_greet:

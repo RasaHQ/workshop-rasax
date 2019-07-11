@@ -1,48 +1,25 @@
 ## new rasa user
 * greet
   - utter_greet
+* name{"name":"Alice"}
+  - utter_ask_location
+* location{"location":"New York"}
+  - utter_used_rasa
 * deny
   - utter_docs
 
 ## existing rasa user 1
 * greet
   - utter_greet
-* affirm
-  - utter_ask_name
 * name{"name":"Tom"}
   - utter_ask_location
 * location{"location":"Berlin"}
-  - utter_send_blog
-  - utter_ask_feedback
-* feedback
-  - utter_thanks
-
-## existing rasa user 2
-* greet
-  - utter_greet
+  - utter_used_rasa
 * affirm
-  - utter_ask_name
-* name{"name":"Tom"}
-  - utter_ask_location
-* location{"location":"Berlin"}
   - utter_send_blog
-  - utter_ask_feedback
-* feedback
-  - utter_thanks
+* subscribe
+  - action_subscribe
 * goodbye
   - utter_goodbye
 
-## existing rasa user 3
-* greet
-  - utter_greet
-* affirm
-  - utter_ask_name
-* name{"name":"Alice"}
-  - utter_ask_location
-* location{"location":"London"}
-  - utter_send_blog
-  - utter_ask_feedback
-* feedback
-  - utter_thanks
-* goodbye
-  - utter_goodbye
+
