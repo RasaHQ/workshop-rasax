@@ -57,11 +57,12 @@ Another advanced use case which you should train your assistant to handle is dea
 with multi-intents - user inputs which represent more than one intention. To train 
 your bot to understand such inputs, create a new multi-intent for affirmation and subscribing to the newsletter and provide some corresponding training examples. For example:
 
+```
 ## intent:affirm+subscribe
 - Yes. Can you subscribe me to the newsletter please?
 - Yep. I would also like to become a subscriber to the Rasa newsletter.
 - Yes I have. Also, add me to the Rasa newsletter subscriber list.
-
+```
 
 ## 2. Dialogue management with Rasa 1.0
 
