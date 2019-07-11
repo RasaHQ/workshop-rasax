@@ -6,7 +6,7 @@ from rasa_sdk.executor import CollectingDispatcher
 import requests
 
 
-class ActionHelloWorld(Action):
+class ActionSubscribe(Action):
 
      def name(self) -> Text:
          return "action_subscribe"
