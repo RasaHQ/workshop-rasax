@@ -1,6 +1,6 @@
 # AI assistant with Rasa and Rasa X
 
-This repository contains the files needed to create a simple AI assistant with open source Rasa tools.
+This repository contains the files needed to create an AI assistant with open source Rasa tools.
 
 ## Requirements
 
@@ -18,14 +18,6 @@ To do that, run:
 In one of the steps of this exercise we will use ngrok. This is an optional step, but if you want to follow,
 make sure to [download ngrok](https://ngrok.com/download) as well. 
 
-## Quick run
-To run the assistant on you command line using Rasa, run:
-
-`rasa shell`
-
-To improve the assistant with Rasa X and real conversational data, run:
-
-`rasa x`
 
 ## Exercise
 You can find a detailed walkthrough of the exercise inside the `exercise.md` file of this repository. You can also find a completed exercise inside the `completed_exercise` directory of this repo.
