@@ -18,6 +18,8 @@ To do that, run:
 In one of the steps of this exercise we will use ngrok. This is an optional step, but if you want to follow,
 make sure to [download ngrok](https://ngrok.com/download) as well. 
 
+*Tip: Since there might be some last minute updates on the repo, don't forget to pull the contents of this repository the day of the workshop :)*
+
 
 ## Exercise
 You can find a detailed walkthrough of the exercise inside the `exercise.md` file of this repository. You can also find a completed exercise inside the `completed_exercise` directory of this repo.
