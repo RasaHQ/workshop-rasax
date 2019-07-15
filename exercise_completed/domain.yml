@@ -1,6 +1,7 @@
 intents:
   - greet
-  - goodbye
+  - goodbye:
+    triggers: utter_goodbye
   - affirm
   - deny
   - thanks
@@ -15,8 +16,7 @@ actions:
 - utter_send_blog
 - utter_ask_name
 - utter_ask_location
-- utter_goodbye:
-    triggers: utter_goodbye
+- utter_goodbye
 - utter_used_rasa
 - action_subscribe
 
