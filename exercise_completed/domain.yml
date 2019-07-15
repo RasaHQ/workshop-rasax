@@ -1,7 +1,7 @@
 intents:
   - greet
   - goodbye:
-    triggers: utter_goodbye
+      triggers: utter_goodbye
   - affirm
   - deny
   - thanks
