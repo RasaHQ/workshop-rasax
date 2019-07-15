@@ -18,6 +18,7 @@ actions:
 - utter_ask_location
 - utter_goodbye
 - utter_used_rasa
+- utter_default
 - action_subscribe
 
 entities:
@@ -51,4 +52,7 @@ templates:
 
   utter_used_rasa:
   - text: "Great! Have you used Rasa before?"
+  
+  utter_default:
+  - text: "Sorry, I didn't quite understand."
 
