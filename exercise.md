@@ -128,7 +128,7 @@ class ActionSubscribe(Action):
 #### 2.5 Train the dialogue model
 Train the dialogue model by running:
 
-`rasa train core`
+`rasa train`
 
 Start the server for Rasa custom actions:
 
