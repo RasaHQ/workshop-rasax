@@ -61,7 +61,24 @@ example:
 
 ---
 
-#### 1.5 Add multi-intents
+#### 1.5 Add out-of-scope
+While it's impossible to teach your assistant to understand every possible
+input, you should enable it to gracefully handle inputs it can't yet understand.
+To do that, you have to first enable your assistant to identify such inputs.
+This can done by defining an intent like `chitchat` which contains examples
+of random user inputs.
+
+```
+## intent:chitchat
+- I want pizza
+- Are you a bot?
+- Who made you?
+```
+
+
+---
+
+#### 1.6 Add multi-intents
 Another advanced use case which you should train your assistant to handle is dealing
 with multi-intents - user inputs which represent more than one intention. To train 
 your bot to understand such inputs, create a new multi-intent for affirmation and subscribing to the newsletter and provide some corresponding training examples. For example:
