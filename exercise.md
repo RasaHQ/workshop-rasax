@@ -103,7 +103,7 @@ new dialogue turn.
 ---
 
 #### 2.2 Update the domain
-A file called `domain.yml` contains the domain configuration of your assistant. It contains all the information an assistant needs to know to operate. Update the domain with your previously created `intents` and `entities` as well as `slots`. Update the domain to include all newly created intents (`name`, `affirm+subscribe`), slots and if you like, you can add more possible response templates.
+A file called `domain.yml` contains the domain configuration of your assistant. It contains all the information an assistant needs to know to operate. Update the domain to include all newly created intents (`name`, `chitchat`, `affirm+subscribe`), entities (`name`), slots and if you like, you can add more possible response templates.
 
 ---
 
